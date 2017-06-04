@@ -1,0 +1,16 @@
+extends layout/_main
+
+block title
+  | Bike Shop
+
+block content
+  .container.blog
+    .row
+      .col-xs-12.col-sm-10.col-md-9
+        +posts('ESTABLISHING YOUR BRAND ON COLLEGE CAMPUSES', 'blog_01.jpg', "Many students are cash-strapped, nowadays. Nevertheless, their purchasing power is very high. Research reveals that 20 million students in the US have a combined disposable income of $417 billion. Moreover, another survey of students' parents reveals that students now make 70 percent of their purchases themselves. These purchases are often made on credit cards. Therefore,…", 'read')
+        +posts('BELIEVE IN THE BUSINESS OF YOUR DREAMS', 'blog_02.jpg', "What is stopping you from believing in the business of your dreams? Insecurity? Fear? Lack of confidence? All of the above? How can you overcome these obstructions? Your Mantras You may be wondering if you have the necessary skills, time, connections, and a million other things in order to create the business of your dreams.…", 'read')
+        +posts('IMPACT – THE HEART OF BUSINESS', 'blog_03.jpg', 'Thousands of people dream of having their own business and even more so be a successful entrepreneur. But what does it take to achieve success in the business industry? One of the most successful entrepreneurs featured at the Forbes website, Wendy Lipton - Dibner said that "the success of your business would solely depend on…')
+        +posts('BEAUTIFUL RUMI QUOTES THAT ARE WORTH READING', 'blog_04.jpg', 'Rumi, is the most popular Sufi poet in the world. His work is not only deep and intense, but also very ethereal. His poetry often stirs an emotion never touched and shows a facet never seen. This Buzzle article has a collection of some beautiful Rumi quotes that are worth reading, without which, life would…', 'read')
+        include ./layout/_pagination
+
+      include ./layout/_aside

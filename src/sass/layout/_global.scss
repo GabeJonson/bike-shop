@@ -17,3 +17,38 @@ figure { margin: 0; }
 }
 
 .relative { position: relative; }
+
+body {
+	background: {
+		image: url(../img/body_bg.png);
+		repeat: no-repeat;
+		position: top left;
+		attachment: scroll;
+		color: #f0f0f0;
+	}
+}
+
+input, button, textarea {
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+}
+
+.non-padding {
+	padding: 0;
+}
+
+.inline {
+	display: inline-block;
+}
+
+#map {
+	@include size(100% 400px);
+}
+
+div.container div.h2 {
+	@include max-custom(480px) {
+		margin-bottom: 30px;
+	}
+}

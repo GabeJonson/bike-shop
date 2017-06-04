@@ -1,3 +1,95 @@
-header {
-	
+header.container {
+  padding-top: 35px;
+
+  #logo {
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 0;
+
+    &.active {
+      label {
+        font-size: 12px;
+        color: $orange;
+        top: 0;
+        left: 20px;
+      }
+    }
+
+    input {
+      @include size(100% 40px);
+      padding: 0 10px;
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid $light;
+    }
+
+    label {
+      color: $light;
+      position: absolute;
+      @include vertical-center;
+      left: 20px;
+      transition: 0.3s;
+    }
+
+    .fa {
+      font-size: 26px;
+      color: $light;
+      position: absolute;
+      @include vertical-center;
+      right: 20px;
+    }
+  }
+
+	div.navbar-default {
+    margin-top: 35px;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    border: 0;
+
+    .main-nav {
+      li {
+        @include mobile {
+          display: block;
+        }
+      }
+    }
+
+    .fa {
+      font-size: 20px;
+    }
+
+    li {
+      @include mobile {
+        display: inline-block;
+      }
+
+      a {
+        font-weight: bold;
+        transition: 0.3s;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .is-empty {
+    span {
+      @include size(15px);
+      font-size: 10px;
+      line-height: 15px;
+      color: $white;
+      background-color: $orange;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  }
 }

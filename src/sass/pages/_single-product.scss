@@ -1,0 +1,227 @@
+.single-product {
+  .produst-details {
+    .socials {
+      padding: 20px 0;
+      border-top: 1px solid $dark;
+    }
+
+    .h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    .price {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: $orange;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: $light;
+    }
+
+    a {
+      @include size(40px);
+      display: inline-block;
+
+      &:not(:nth-last-of-type(1)) {
+        margin-right: 5px;
+      }
+
+      .fa {
+        @include size(40px);
+        font-size: 20px;
+        line-height: 40px;
+        color: $white;
+        transition: 0.3s;
+
+        &-facebook {
+          background-color: $facebook;
+
+          &:hover {
+            background-color: $facebook-hover;
+          }
+        }
+
+        &-twitter {
+          background-color: $twitter;
+
+          &:hover {
+            background-color: $twitter-hover;
+          }
+        }
+
+        &-google-plus {
+          background-color: $google;
+
+          &:hover {
+            background-color: $google-hover;
+          }
+        }
+
+        &-pinterest {
+          background-color: $pinterest;
+
+          &:hover {
+            background-color: $pinterest-hover;
+          }
+        }
+      }
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input {
+      @include size(60px 40px);
+      margin-right: 10px;
+      padding-left: 10px;
+
+      &.btn {
+        @include size(auto null);
+        padding: {
+          right: 20px;
+          left: 20px;
+        }
+        font-weight: bold;
+        color: $white;
+        background-color: $orange;
+        border-radius: 0;
+        transition: 0.3s;
+
+        &:hover {
+          color: $white;
+          background-color: $dark;
+        }
+      }
+    }
+  }
+
+  .tabs-container {
+    clear: both;
+  }
+
+  .nav-tabs {
+    padding-right: 0;
+
+    & > li {
+      border: 1px solid $dark;
+      border-right: 0;
+      float: none;
+    }
+  }
+
+  .tab-content {
+    padding: 0;
+
+    .tab-pane {
+      padding: 30px;
+      background-color: $white;
+      border: 1px solid $dark;
+    }
+
+    .h2, .h3, .h4 {
+      margin-top: 0;
+    }
+
+    .h3 {
+      margin-bottom: 20px;
+    }
+
+    img {
+      margin-right: 20px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .text-container {
+      @include max-size(80% null);
+      display: inline-block;
+    }
+
+    p {
+      font-size: 12px;
+      color: $light;
+    }
+
+    .comment {
+      margin-bottom: 20px;
+    }
+
+    form .h2 {
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    label {
+      font-size: 12px;
+      color: $light;
+      display: block;
+    }
+
+    input, textarea {
+      padding: 20px;
+    }
+
+    input {
+      @include size(100% 50vh);
+      @include max-size(370px 40px);
+      font-size: 16px;
+      border: 1px solid $light;
+    }
+
+
+    textarea {
+      @include size(100% 250px);
+      border: 1px solid $light;
+    }
+
+    button {
+      padding: {
+        right: 20px;
+        left: 20px;
+      }
+      color: $white;
+      background-color: $orange;
+      transition: 0.3s;
+
+      &:hover {
+        color: $white;
+        background-color: $dark;
+      }
+    }
+
+    iframe {
+      @include size(100% 500px);
+    }
+  }
+
+  .xzoom {
+    background-color: $white;
+  }
+
+  .xzoom-thumbs {
+    a {
+      @include max-size(20% null);
+      display: inline-block;
+
+      &:not(:nth-last-of-type(1)) {
+        margin-right: 5px;
+      }
+
+      .xactive {
+        box-shadow: none;
+        border: 1px solid $dark;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

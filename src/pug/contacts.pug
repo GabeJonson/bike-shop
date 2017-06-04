@@ -1,0 +1,51 @@
+extends layout/_main
+
+block title
+  | Bike Shop
+
+block content
+  .container.contacts
+    .row
+      .col-xs-12.colsm-12#map
+      .col-xs-12.col-sm-4
+        .h2 Contact info
+        p Email us with any questions or inquiries or use our contact data. We would be happy to answer your questions.
+        ul
+          li
+            i.fa.fa-map-marker
+            span The Company Name Inc. 9870 St Vincent Place, Glasgow, DC 45 Fr 45.
+          li
+            i.fa.fa-phone
+            span Telephone: +1 800 603 6035
+          li
+            i.fa.fa-envelope
+            span E-mail: #[a(href='mailto: mail@gmail.com') mail@gmail.com]
+          li
+            i.fa.fa-fax
+            span FAX: +1 800 889 9898
+      .col-xs-12.col-sm-8.non-padding
+        .h2 Contact form
+        form.clearfix
+          .form-group.relative.inline
+            label
+              i.fa.fa-user
+              | Name:
+            input.contacts-inputs(type='text')
+          .form-group.relative.inline
+            label
+              i.fa.fa-envelope
+              | E-mail:
+            input.contacts-inputs(type='text')
+          .form-group.relative.inline
+            label
+              i.fa.fa-phone
+              | Phone:
+            input.contacts-inputs(type='text')
+          .textarea-container.form-group.relative
+            label
+              i.fa.fa-pencil
+              | Message:
+            textarea.contacts-inputs
+          .form-group.col-xs-12.col-sm-12
+            button.btn.text-uppercase#clear clear
+            button.btn.text-uppercase.send send

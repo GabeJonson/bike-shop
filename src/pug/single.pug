@@ -1,0 +1,97 @@
+extends layout/_main
+
+block title
+  | Bike Shop
+
+block content
+  .container.blog.post
+    .row
+      .col-xs-12.col-sm-10.col-md-9
+        .col-xs-12.col-sm-12
+          strong.h2.text-uppercase ESTABLISHING YOUR BRAND ON COLLEGE CAMPUSES
+          .blog-post
+            +img('blog_01.jpg')(class='responsive-image')
+            p Many students are cash-strapped, nowadays. Nevertheless, their purchasing power is very high. Research reveals that 20 million students in the US have a combined disposable income of $417 billion. Moreover, another survey of students' parents reveals that students now make 70 percent of their purchases themselves. These purchases are often made on credit cards. Therefore, students often have a significantly higher purchasing power.
+            p If you know this, you can utilize it to capture the attention of the 16-24 age demographic. However, it is essential for your product or service to appeal to the lifestyle of the students. Additionally, student ambassadors should be utilized to spread the word about your product or service to their friends and classmates.
+            p If you have not yet considered this demographic, it is time to reach out to them now! Social media is a popular method for socialization and communication between many young people. Students are the majority users of social networking sites like Facebook and Twitter. These are the right places to introduce brands to young people.It is probably the right place to introduce a brand to them. To capture the student audience, it is essential to be a part of the conversation; it is also important to keep them engaged. Social media is the ideal platform for this.
+            p However, studies state that half of these social media savvy youngsters fail to follow brands on social networking sites. Students who do follow often only show temporary, marginal support. Social media is definitely a great platform for engaging students and spreading the word. However, it is definitely not the best for brand introduction and recognition.
+
+            .footer-blogpost
+              .tags.inline
+                i.fa.fa-tag
+                a.text-uppercase(href='#') #[strong BRANDING], 
+                a.text-uppercase(href='#') #[strong CONSULTING], 
+                a.text-uppercase(href='#') #[strong CUSTOMER], 
+                a.text-uppercase(href='#') #[strong SERVICE]
+              .date.inline.text-uppercase
+                i.fa.fa-calendar
+                | may 27, 2017
+              .user.inline.text-uppercase
+                i.fa.fa-user
+                | admin
+              .commets.inline.text-uppercase
+                i.fa.fa-comments
+                | 3 comments
+
+        .admin-comment.col-xs-12.col-sm-12
+          strong.h2.text-uppercase WRITTEN BY ADMIN
+          .comment-container
+            +img('no-ava.png')
+            .text-container.inline
+              p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.
+              p.all-posts.text-uppercase view all posts by: #[a(href='#') admin]
+
+        .related-posts.clearfix.non-padding
+          .related-post.col-xs-6.col-sm-3
+            +img('blog_01.jpg')(class="responsive-image")
+            a(href="#") Believe in the Business of Your Dreams
+          .related-post.col-xs-6.col-sm-3
+            +img('blog_02.jpg')(class="responsive-image")
+            a(href="#") Impact – The Heart of Business
+          .related-post.col-xs-6.col-sm-3
+            +img('blog_03.jpg')(class="responsive-image")
+            a(href="#") Beautiful Rumi Quotes that are Worth Reading
+          .related-post.col-xs-6.col-sm-3
+            +img('blog_04.jpg')(class="responsive-image")
+            a(href="#") How to Keep Your Heart Healthy
+
+        
+        .response
+          .comment-body
+            .image-container.inline
+              +img('no-ava.png')(class='responsive-image')
+              strong.text-uppercase.text-center John Doe
+            .text-container.inline That’s awesome! Future belongs to youngsters, so businessmen can’t ignore their needs in any case.
+            .reply-container.text-right
+              button.btn.text-uppercase reply
+          .comment-body.children
+            .image-container.inline
+              +img('no-ava.png')(class='responsive-image')
+              strong.text-uppercase.text-center John Doe
+            .text-container.inline That’s awesome! Future belongs to youngsters, so businessmen can’t ignore their needs in any case.
+            .reply-container.text-right
+              button.btn.text-uppercase reply
+          .comment-body.children
+            .image-container.inline
+              +img('no-ava.png')(class='responsive-image')
+              strong.text-uppercase.text-center John Doe
+            .text-container.inline That’s awesome! Future belongs to youngsters, so businessmen can’t ignore their needs in any case.
+            .reply-container.text-right
+              button.btn.text-uppercase reply
+
+        .leave-comment
+          .h2.text-uppercase LEAVE A COMMENT
+          form
+            .form-group
+              input(type='text', placeholder='Name*')
+            .form-group
+              input(type='text', placeholder='Email*')
+            .form-group
+              input(type='text', placeholder='Website')
+            .form-group
+              textarea(placeholder='Your comment*')
+            .form-group
+              button.btn.text-uppercase(type='button') submit comment
+
+
+      include ./layout/_aside

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bike Shop
+    </title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-9" id="logo"><a href="/html/"><img src="img/logo.png" alt=""></a></div>
+        <div class="col-xs-12 col-sm-3">
+          <form>
+            <div class="form-group material">
+              <label>Search</label>
+              <input id="search" type="text"><i class="fa fa-search"></i>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-sm-12 navbar navbar-default">
+          <ul class="main-nav nav navbar-nav">
+            <li><a class="text-uppercase" href="/html">home</a></li>
+            <li><a class="text-uppercase" href="/html/about.html">about</a></li>
+            <li><a class="text-uppercase" href="/html/shop.html">shop</a></li>
+            <li><a class="text-uppercase" href="/html/blog.html">blog</a></li>
+            <li><a class="text-uppercase" href="/html/contacts.html">contacts</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-user"></i></a></li>
+            <li class="is-empty relative"><a href="#"><span class="text-center">1</span><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container contacts">
+      <div class="row">
+        <div class="col-xs-12 colsm-12" id="map"></div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="h2">Contact info</div>
+          <p>Email us with any questions or inquiries or use our contact data. We would be happy to answer your questions.</p>
+          <ul>
+            <li><i class="fa fa-map-marker"></i><span>The Company Name Inc. 9870 St Vincent Place, Glasgow, DC 45 Fr 45.</span></li>
+            <li><i class="fa fa-phone"></i><span>Telephone: +1 800 603 6035</span></li>
+            <li><i class="fa fa-envelope"></i><span>E-mail: <a href="mailto: mail@gmail.com">mail@gmail.com</a></span></li>
+            <li><i class="fa fa-fax"></i><span>FAX: +1 800 889 9898</span></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-8 non-padding">
+          <div class="h2">Contact form</div>
+          <form class="clearfix">
+            <div class="form-group relative inline">
+              <label><i class="fa fa-user"></i>Name:</label>
+              <input class="contacts-inputs" type="text">
+            </div>
+            <div class="form-group relative inline">
+              <label><i class="fa fa-envelope"></i>E-mail:</label>
+              <input class="contacts-inputs" type="text">
+            </div>
+            <div class="form-group relative inline">
+              <label><i class="fa fa-phone"></i>Phone:</label>
+              <input class="contacts-inputs" type="text">
+            </div>
+            <div class="textarea-container form-group relative">
+              <label><i class="fa fa-pencil"></i>Message:</label>
+              <textarea class="contacts-inputs"></textarea>
+            </div>
+            <div class="form-group col-xs-12 col-sm-12">
+              <button class="btn text-uppercase" id="clear">clear</button>
+              <button class="btn text-uppercase send">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <p class="text-uppercase"><strong>Follow us on facebook</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <ul>
+                <li class="text-uppercase active"><a href="#">home</a>
+                </li>
+                <li class="text-uppercase"><a href="#">about</a>
+                </li>
+                <li class="text-uppercase"><a href="#">shop</a>
+                </li>
+                <li class="text-uppercase"><a href="#">blog</a>
+                </li>
+                <li class="text-uppercase"><a href="#">contacts</a>
+                </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="call-us clearfix"><i class="fa fa-phone"></i>
+            <div class="text-contaienr">
+              <div class="h3 text-uppercase"><strong>call us</strong>:</div>
+              <p>1-800-234-5677</p>
+            </div>
+          </div>
+          <div class="mail-us clearfix"><i class="fa fa-envelope"></i>
+            <div class="text-container">
+              <p class="text-uppercase">9870 ST VINCENT PLACE,</p>
+              <p class="text-uppercase">GLASGOW, DC 45 FR 45.</p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright col-xs-12 col-sm-10 non-padding">
+          <p class="col-xs-12 col-sm-12"><a class="text-uppercase" href="#"><strong>bike store</strong></a> is proudly powered by WordPress <a class="text-uppercase" href="#">Entries (RSS)</a> and <a class="text-uppercase" href="#">Comments (RSS)</a> <a class="text-uppercase" href="#">Privacy Policy</a></p>
+        </div>
+        <div class="social col-xs-12 col-sm-2 text-right"><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
+      </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiW-5cdWeczl7h0CGV7ndJ1PIVXwz_-Bs&amp;callback=bike.googleMaps" async></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/xzoom.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

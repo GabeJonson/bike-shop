@@ -1,0 +1,39 @@
+include ../utils/_mixins
+include ../utils/_varibles
+
+aside.col-md-3.hidden-xs.hidden-sm
+  strong.h2 CATEGORIES
+  ul
+    li
+      i.fa.fa-angle-right
+      a(href='#') #[strong.text-uppercase BRANDING]
+    li
+      i.fa.fa-angle-right
+      a(href='#') #[strong.text-uppercase CONSULTING]
+    li
+      i.fa.fa-angle-right
+      a(href='#') #[strong.text-uppercase CUSTOMER SERVICE]
+    li
+      i.fa.fa-angle-right
+      a(href='#') #[strong.text-uppercase ETHICS]
+
+  ul
+    li
+      i.fa.fa-angle-right
+      a(href='#') #[strong.text-uppercase BIKE TOOLS]
+    li
+      i.fa.fa-angle-right
+      a(href='#') #[strong.text-uppercase BIKES]
+    li
+      i.fa.fa-angle-right
+      a(href='#') #[strong.text-uppercase PEDALS]
+    li
+      i.fa.fa-angle-right
+      a(href='#') #[strong.text-uppercase SHOES]
+    li
+      i.fa.fa-angle-right
+      a(href='#') #[strong.text-uppercase SUNGLASSES]
+
+  ul.stuff
+    li
+      +stuff(items)

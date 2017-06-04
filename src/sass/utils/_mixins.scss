@@ -52,7 +52,7 @@
 @mixin absolute-center {
   position: absolute;
   top: 50%;
-  left: 50px;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -62,4 +62,13 @@
     display: block;
     clear: both;
   }
+}
+
+@mixin font($size, $family, $weight: normal, $height: 1) {
+  font: {
+    family: $family;
+    size: $size;
+    weight: $weight;
+  }
+  line-height: $height;
 }

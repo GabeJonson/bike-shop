@@ -1,5 +1,21 @@
 // color
-
+$black: #000;
+$white: #fff;
+$orange: #fe8869;
+$dark: #363636;
+$light: #bcbcbc;
+$darken: #333;
+$footer-border: #d9d9d9;
+$footer-links: #9c9c9c;
+$contacts-color: #999;
+$facebook: #3b5998;
+$facebook-hover: #263961;
+$twitter: #00aced;
+$twitter-hover: #0074a1;
+$google: #dd4b39;
+$google-hover: #ac2d1e;
+$pinterest: #cb2027;
+$pinterest-hover: #89161a;
 
 // breakpoints
 $xs:  max-width 768px !default;
@@ -7,13 +23,6 @@ $sm:  min-width 768px !default;
 $md:  min-width 992px !default;
 $lg:  min-width 1200px !default;
 $xlg: min-width 1600px !default;
-
-// media
-$mobile-font:       16px;
-$tablet-font:       16px;
-$tablet-land-font:  16px;
-$desktop-font:      16px;
-$desktop-wild-font: 16px;
 
 // fonts
 $font-path: '../fonts/';

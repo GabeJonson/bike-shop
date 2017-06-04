@@ -1,0 +1,109 @@
+extends layout/_main
+
+block title
+  | Bike Shop
+
+block content
+  .container.single-product.shop
+    .row
+      .col-xs-12.col-sm-4
+        img.xzoom.responsive-image(src=`${imgPath}thumb_01.png`, xoriginal=`${imgPath}thumb_01_hover.jpg`)
+        .xzoom-thumbs
+          a(href=`${imgPath}thumb_01_hover.jpg`)
+            img.xzoom-gallery.responsive-image(width='80', src=`${imgPath}thumb_01.png`, xpreview=`${imgPath}thumb_01_hover.png`)
+          a(href=`${imgPath}thumb_02_hover.jpg`)
+            img.xzoom-gallery.responsive-image(width='80', src=`${imgPath}thumb_02.png`, xpreview=`${imgPath}thumb_02_hover.png`)
+          a(href=`${imgPath}thumb_01_hover.jpg`)
+            img.xzoom-gallery.responsive-image(width='80', src=`${imgPath}thumb_01.png`, xpreview=`${imgPath}thumb_01_hover.png`)
+          a(href=`${imgPath}thumb_02_hover.jpg`)
+            img.xzoom-gallery.responsive-image(width='80', src=`${imgPath}thumb_02.png`, xpreview=`${imgPath}thumb_02_hover.png`)
+
+      .produst-details.col-xa-12.col-sm-8
+        .h2 2013 Blanco Black and Blue Man’s Long Sleeve
+        .price $120.00
+        p.description Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?
+        form
+          .form-group
+            input(type='number', value='1')
+            input.btn.text-uppercase(type='submit', value='add to card')
+        .socials
+          a.text-center(href='#')
+            i.fa.fa-facebook
+          a.text-center(href='#')
+            i.fa.fa-twitter
+          a.text-center(href='#')
+            i.fa.fa-google-plus
+          a.text-center(href='#')
+            i.fa.fa-pinterest
+
+      .tabs-container.clearfix
+        ul.nav.nav-tabs.col-xs-12.col-sm-2#tabs(role='tablist')
+          li.active(role='presentation')
+            a.text-uppercase(href='#description', aria-controls='description', role='tab', data-toggle='tab') Description
+          li(role='presentation')
+            a.text-uppercase(href='#reviews', aria-controls='reviews', role='tab', data-toggle='tab') Reviews
+          li(role='presentation')
+            a.text-uppercase(href='#video', aria-controls='video', role='tab', data-toggle='tab') Video
+        // Tab panes
+        .tab-content.col-xs-12.col-sm-10
+          #description.tab-pane.active(role='tabpanel') 
+            .h2 Product Description
+            p Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike? We adore that unforgettable feeling that takes your breath away when you are rolling down from the steep heel. Bikes were our founder’s love from the 2nd grade (the time when his parents bought him his first Black Flash city bike). Since that time he’s decided to open his own store that would sell everything that is connected with bikes. So, as you can see dreams come true and today we’re glad to welcome you at our Bike Store.
+            p Our online shop is the best place to buy bikes, accessories and other related products. Perfect service, reliable shipping system and flexible discount and loyalty programs - these are the main components that have ensured the success of our business. Great team chemistry and flawless customer care will surprise you instantly and you’ll notice that you are in a right place where people know everything about bicycles.
+            p So, it doesn’t matter whether you are an experienced bicycle owner or just a young fellow who is looking for its first machine – we will always help you to find the perfect solution. Stay with our store and let’s spread bike culture all over the web.
+          #reviews.tab-pane(role='tabpanel')
+            .h3 #[span 3 reviews] for #[span 2013 Blanco Black and Blue Man’s Long Sleeve]
+            .comment
+              +img('no-ava.png')
+              .text-container
+                .h4 John Doe - #[span.date September 29, 2015]
+                p I want to thank you for my very very quick delivery and I just love my order… Your company efficient services and customer care are second to none! I am very happy! I will surely share my experience with my friends!
+            .comment
+              +img('no-ava.png')
+              .text-container
+                .h4 John Doe - #[span.date September 29, 2015]
+                p I want to thank you for my very very quick delivery and I just love my order… Your company efficient services and customer care are second to none! I am very happy! I will surely share my experience with my friends!
+            .comment
+              +img('no-ava.png')
+              .text-container
+                .h4 John Doe - #[span.date September 29, 2015]
+                p I want to thank you for my very very quick delivery and I just love my order… Your company efficient services and customer care are second to none! I am very happy! I will surely share my experience with my friends!
+            form
+              .h2.text-uppercase ADD A REVIEW
+              .form-group
+                label Name*
+                input(type='text')
+              .form-group
+                label Email*
+                input(type="text")
+              .form-group
+                label Your Rewie*
+                textarea
+              .form-group
+                button.btn.text-uppercase(type='button') submit
+
+          #video.tab-pane(role='tabpanel') 
+            iframe(width='560', height='315', src='https://www.youtube.com/embed/16aMFN8KEgY', frameborder='0', allowfullscreen='')
+
+      ul.products.clearfix
+        +products(
+        'first.png',
+        '$80.00',
+        '$85.00',
+        'Diamondback 2013 Overdrive 29’er...',
+        'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?',
+        'sale')
+        +products(
+        'first.png',
+        '$80.00',
+        '$85.00',
+        'Diamondback 2013 Overdrive 29’er...',
+        'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?',
+        '')
+        +products(
+        'first.png',
+        '$80.00',
+        '$85.00',
+        'Diamondback 2013 Overdrive 29’er...',
+        'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?',
+        '')

@@ -1,1 +1,34 @@
-header
+include ../utils/_mixins
+
+header.container
+    .row
+        #logo.col-xs-12.col-sm-9
+            a(href='/html/')
+                +img('logo.png')
+        .col-xs-12.col-sm-3
+            form
+                .form-group.material
+                    label Search
+                    input#search(type="text")
+                    i.fa.fa-search
+        .col-xs-12.col-sm-12.navbar.navbar-default
+            ul.main-nav.nav.navbar-nav
+                li
+                    a.text-uppercase(href="/html") home
+                li
+                    a.text-uppercase(href="/html/about.html") about
+                li
+                    a.text-uppercase(href="/html/shop.html") shop
+                li
+                    a.text-uppercase(href="/html/blog.html") blog
+                li
+                    a.text-uppercase(href="/html/contacts.html") contacts
+
+            ul.nav.navbar-nav.navbar-right
+                li
+                    a(href="#")
+                        i.fa.fa-user
+                li.is-empty.relative
+                    a(href="#")
+                        span.text-center 1
+                        i.fa.fa-shopping-cart

@@ -1,7 +1,3 @@
 // fonts
 
 // font
-@each $size in $heading-sizes {
-	$key: index($heading-sizes, $size);
-	h#{$key}, .h#{$key} { font-size: rem($size); }
-}

@@ -1,0 +1,44 @@
+extends layout/_main
+
+block title
+  | Bike Shop
+
+block content
+  .container.shop
+    .row
+      .col-xs-12.col-sm-10.col-md-9.non-padding
+        ul.products.clearfix
+          +productsShop(
+          'first.png',
+          '$80.00',
+          'Diamondback 2013 Overdrive...',
+          'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?')
+          +productsShop(
+          'first.png',
+          '$80.00',
+          'Diamondback 2013 Overdrive...',
+          'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?')
+          +productsShop(
+          'first.png',
+          '$80.00',
+          'Diamondback 2013 Overdrive...',
+          'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?')
+          +productsShop(
+          'first.png',
+          '$80.00',
+          'Diamondback 2013 Overdrive...',
+          'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?')
+          +productsShop(
+          'first.png',
+          '$80.00',
+          'Diamondback 2013 Overdrive...',
+          'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?')
+          +productsShop(
+          'first.png',
+          '$80.00',
+          'Diamondback 2013 Overdrive...',
+          'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?')  
+        include ./layout/_pagination
+
+
+      include ./layout/_aside

@@ -1,0 +1,86 @@
+extends layout/_main
+
+block title
+  | Bike Shop
+
+block content
+    .container.about
+        .row
+            .top-container.clearfix
+                .col-xs-12.col-sm-4
+                    strong.h2.text-uppercase WHY SHOP WITH US?
+                    .photo-block
+                        +img('about_img.jpg')(class="responsive-image")
+                        .h3.text-uppercase WE HAVE THE BEST PRODUCT - WE REPRESENT THE BEST BRANDS IN THE INDUSTRY.
+                        p It is the best among the variety of the competing ones. We provide you with tons of information on various aspects of fishing. Our team of professionals will happily help you to deal with any issue.
+                        p Client is our first priority and a great amount of positive testimonials can prove this.
+
+                .col-xs-12.col-sm-4
+                    .h2.text-uppercase OUR HISTORY
+                    ul
+                        li
+                            strong.date 1991 -
+                            p In early 1978s our company expanded the business and are still today providing the exceptional quality products to our valuable customers.
+                        li
+                            strong.date 1992 -
+                            p In 1988, we expanded again in order to keep up with the increased demands in the industry.
+                        li
+                            strong.date 1993 -
+                            p In 2001 our company moves to a new facility and purchases a new 500,000-square-foot warehouse. November 2007 a second location was opened dedicated to serving customers’ needs with only the finest products.
+
+                .orders.col-xs-12.col-sm-4
+                    .h2 ORDERS & RETURNS
+                    strong.h3.text-uppercase BIKES STORE HELP CENTER ANSWERS TO COMMONLY ASKED QUESTIONS
+                    p Our rating has remained at 100% with excellent and positive feedbacks. We are constantly adding new products and new lines of products with extra features, so come back.
+                    ul.list
+                        li.relative
+                            i.fa.fa-angle-right
+                            strong.text-uppercase ORDER STATUS
+                        li.relative
+                            i.fa.fa-angle-right
+                            strong.text-uppercase SHIPPING, DELIVERY & STORE PICKUP
+                        li.relative
+                            i.fa.fa-angle-right
+                            strong.text-uppercase RETURN & EXCHANGE PROMISE
+                        li.relative
+                            i.fa.fa-angle-right
+                            strong.text-uppercase PRICE MATCH GUARANTEE
+                        li.relative
+                            i.fa.fa-angle-right
+                            strong.text-uppercase PAY WITH POINTS
+                        li.relative
+                            i.fa.fa-angle-right
+                            strong.text-uppercase MORE ORDERS & RETURNS HELP
+
+                    p If any product does not meet your expectations, you can simply return it. We guarantee your money back for one year. After one year, we can provide an exchange, repair, or store credit to ensure you have the product that meets your needs. If you have lost your receipt, we will provide a store credit at our current price.
+
+            .bottom-container.clearfix
+                .col-xs-12.col-sm-6
+                    .h2.text-uppercase OUR ADVANTAGES
+                    ul.prises
+                        li.relative
+                            i.fa.fa-trophy
+                            span We have a huge selection of products to meet any taste and budget.
+                        li.relative
+                            i.fa.fa-truck
+                            span Free shipping on all our store items
+                        li.relative
+                            i.fa.fa-umbrella
+                            span Low prices are the cornerstone of our vision, business idea and concept.
+                        li.relative
+                            i.fa.fa-circle
+                            span Our products are only of the highest possible quality.
+                .col-xs-12.col-sm-6
+                    .h2.text-uppercase TESTIMONIALS
+                    .item
+                        +img('testi_01.jpg')
+                        .text-container
+                            p Hi, guys! I want to thank you for my very very quick delivery and I just love my order… Your company efficient services and customer care are second to none!…
+                            strong.h3.text-uppercase DENNIS SIMPSON
+                            a(href='#') Link to sait
+                    .item
+                        +img('testi_02.jpg')
+                        .text-container
+                            p Thank you again and again! I have experienced the fastest support ever. My order arrived on my door step the following day. Your team is always, friendly and very helpful.…
+                            strong.h3.text-uppercase DENNIS SIMPSON
+                            a(href='#') Link to sait

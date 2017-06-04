@@ -1,6 +1,104 @@
 extends layout/_main
 
 block title
-  | The title
+  | Bike Shop
 
 block content
+  .container
+    .row
+      .owl-carousel.index-carousel
+        +carousel('slide_01.jpg', 'SEASON SALE')
+        +carousel('slide_02.jpg', 'TOP SELLERS')
+        +carousel('slide_03.jpg', 'POPULAR BRANDS')
+  .container.goods
+    .row
+      +items('banner_img_01.png', 'bikes & frames', 'Wide selection of high-quality mountain bikes, kid’s bikes, bikes for fitness, road racing and cyclocross!')
+      +items('banner_img_02.png', 'bike parts & components', 'Build your exclusive bike from our selection of bike parts and frames. Personalization process can be easy and quick!')
+      +items('banner_img_03.png', 'cycling clothing & footwear', 'Superb range of cycling products will exceed any expectations. Comfortable clothing and footware from world’s most popular brands.')
+
+  .products.container
+    .wrap.row
+      .h2.text-uppercase.text-center FEATURED PRODUCTS
+      ul.clearfix
+        +products(
+        'first.png',
+        '$80.00',
+        '$85.00',
+        'Diamondback 2013 Overdrive 29’er...',
+        'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?',
+        'sale'
+        )
+        +products(
+        'second.png',
+        '$80.00',
+        '$85.00',
+        'Nashbar AT2 Mountain Bike',
+        'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?'
+        )
+        +products(
+        'third.png',
+        '$80.00',
+        '$85.00',
+        'GMC Topkick Dual Suspension...',
+        'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?',
+        'sale'
+        )
+        +products(
+        'fourth.png',
+        '$80.00',
+        '$85.00',
+        'GMC Topkick Dual Suspension',
+        'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?'
+        )
+        +products(
+        'fives.png',
+        '$80.00',
+        '$85.00',
+        '2014 Kestrel Talon Road... ',
+        'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?'
+        )
+        +products(
+        'sixth.png',
+        '$80.00',
+        '$85.00',
+        'Brooks B17 Saddle',
+        'Do you remember what it is like to be cruising on the boulevard and catching fresh spring wind on the shiny and chromed old school bike?'
+        )
+
+  .parralax.container(style=`background-image: url(${imgPath}home_parallax.jpg)`)
+    .row.text-center
+      .h2.text-uppercase the biggest
+      .h3.text-uppercase sake of the year
+      .h4.text-uppercase save up to
+      p.text-uppercase 40%
+
+  .latest-posts.container
+    .row
+      .h2.text-uppercase.text-center FROM OUR BLOG
+      ul
+        +latestPosts('left',
+        'blog_01.jpg',
+        'ESTABLISHING YOUR BRAND ON COLLEGE CAMPUSES',
+        "Many students are cash-strapped, nowadays. Nevertheless, their purchasing power is very high. Research reveals that 20 million students in the US have a combined disposable income of $417 billion. Moreover, another survey of students' parents reveals that students now make 70 percent of their purchases themselves. These purchases are often made on credit cards. Therefore, students often have a significantly Continue…")
+        +latestPosts('',
+        'blog_02.jpg',
+        'ESTABLISHING YOUR BRAND ON COLLEGE CAMPUSES',
+        "Many students are cash-strapped, nowadays. Nevertheless, their purchasing power is very high. Research reveals that 20 million students in the US have a combined disposable income of $417 billion. Moreover, another survey of students' parents reveals that students now make 70 percent of their purchases themselves. These purchases are often made on credit cards. Therefore, students often have a significantly Continue…")
+        +latestPosts('left',
+        'blog_03.jpg',
+        'ESTABLISHING YOUR BRAND ON COLLEGE CAMPUSES',
+        "Many students are cash-strapped, nowadays. Nevertheless, their purchasing power is very high. Research reveals that 20 million students in the US have a combined disposable income of $417 billion. Moreover, another survey of students' parents reveals that students now make 70 percent of their purchases themselves. These purchases are often made on credit cards. Therefore, students often have a significantly Continue…")
+        +latestPosts('',
+        'blog_04.jpg',
+        'ESTABLISHING YOUR BRAND ON COLLEGE CAMPUSES',
+        "Many students are cash-strapped, nowadays. Nevertheless, their purchasing power is very high. Research reveals that 20 million students in the US have a combined disposable income of $417 billion. Moreover, another survey of students' parents reveals that students now make 70 percent of their purchases themselves. These purchases are often made on credit cards. Therefore, students often have a significantly Continue…")
+
+  .subscribe.container
+    .row
+      .col-xs-12.col-md-6.non-padding
+        i.fa.fa-envelope-o
+        .h2.text-uppercase SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE NEWS, UPDATES, AND ANOTHER STUFF BY EMAIL.
+      form.col-xs-12.col-md-6.non-padding
+        .form-group
+          input(type='text', placeholder='Your email address')
+          button.btn.text-uppercase(type='button') subscribe

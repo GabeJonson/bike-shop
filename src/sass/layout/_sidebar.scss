@@ -1,0 +1,40 @@
+aside {
+  .h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    color: $dark;
+    display: block;
+  }
+
+  ul {
+    margin-bottom: 40px;
+
+    li {
+      .fa {
+        margin-right: 10px;
+        font-size: 20px;
+        color: $orange;
+      }
+    }
+
+    &.stuff {
+      img {
+        @include max-size(60px null);
+        margin-right: 10px;
+        vertical-align: top;
+        display: inline-block;
+      }
+
+      .text-container {
+        @include max-size(70% null);
+        margin-bottom: 20px;
+        display: inline-block;
+
+        p {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

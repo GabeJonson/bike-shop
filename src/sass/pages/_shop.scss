@@ -1,0 +1,19 @@
+.shop {
+  .products {
+    padding-bottom: 0;
+  }
+
+  ul {
+    li {
+      a {
+        color: $dark;
+        transition: 0.3s;
+
+        &:hover {
+          text-decoration: none;
+          color: $orange;
+        }
+      }
+    }
+  }
+}

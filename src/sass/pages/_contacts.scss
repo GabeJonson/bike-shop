@@ -1,0 +1,106 @@
+.contacts {
+  #map {
+    margin-bottom: 10px;
+  }
+
+  li {
+    margin-bottom: 10px;
+
+    .fa {
+      margin-right: 10px;
+      vertical-align: top;
+    }
+
+    span {
+      @include max-size(80% null);
+      display: inline-block;
+    }
+
+    a {
+      color: $orange;
+      transition: 0.3s;
+
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+
+  form {
+    label {
+      position: absolute;
+      left: 30px;
+      @include vertical-center;
+
+      .fa {
+        margin-right: 10px;
+        font-size: 20px;
+        color: $contacts-color;
+      }
+    }
+
+    .form-group {
+      @include size(31% null);
+
+      &:not(:first-of-type):not(:last-of-type):not(:nth-last-of-type(2)) {
+        margin-left: 20px;
+      }
+
+      &:last-of-type {
+        padding: 0;
+      }
+
+      label {
+        color: $contacts-color;
+        pointer-events: none;
+      }
+    }
+
+    input {
+      @include size(100% 40px);
+      padding-left: 30px;
+      border: 1px solid $dark;
+    }
+
+    .textarea-container.form-group {
+      @include size(100% null);
+      margin-left: 0;
+
+      label {
+        top: 20px;
+        pointer-events: none;
+      }
+
+      textarea {
+        @include size(100% 100vh);
+        @include max-size(770px 250px);
+        border: 1px solid $dark;
+        padding: 10px 30px;
+      }
+    }
+
+    .btn {
+      padding: {
+        right: 20px;
+        left: 20px;
+      }
+      font: {
+        size: 14px;
+        weight: bold;
+      }
+      color: $white;
+      background-color: $orange;
+      border-radius: 0;
+      transition: 0.3s;
+
+      &:hover {
+        color: $white;
+        background-color: $dark;
+      }
+
+      &:first-of-type {
+        margin-right: 10px;
+      }
+    }
+  }
+}

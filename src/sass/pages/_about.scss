@@ -1,0 +1,133 @@
+.about {
+  .h2 {
+      margin-bottom: 30px;
+      @include font(18px, null, bold, 20px);
+    }
+
+  .h3 {
+    margin-top: 15px;
+    @include font(14px, null, bold, 24px);
+    color: $darken;
+  }
+
+  p {
+    color: $light;
+  }
+
+  .top-container {
+    padding: {
+      top: 50px;
+      bottom: 50px;
+    }
+
+    strong {
+      display: inline-block;
+    }
+
+    .photo-block {
+      padding-bottom: 20px;
+      background-color: $white;
+    }
+
+    .h3, p {
+      padding: 0 25px;
+    }
+
+    ul {
+      li {
+        .date {
+          vertical-align: top;
+          display: inline-block;
+        }
+
+        p {
+          @include max-size(80% null);
+          display: inline-block;
+        }
+      }
+    }
+
+    .orders {
+      .h3, p {
+        padding: 0;
+      }
+
+      ul {
+        li {
+          .fa {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-container {
+    padding: {
+      top: 50px;
+      bottom: 50px;
+    }
+
+    .prises {
+      li {
+        margin-bottom: 30px;
+      }
+
+      .fa {
+        margin-right: 20px;
+        font-size: 60px;
+        color: $orange;
+      }
+
+      span {
+        vertical-align: top;
+
+        @include max-custom(480px) {
+          @include max-size(70% null);
+          display: inline-block;
+        }
+      }
+    }
+
+    .item {
+      margin-bottom: 45px;
+      background-color: $white;
+    }
+
+    img {
+      margin-right: 20px;
+      vertical-align: top;
+      display: inline-block;
+
+      @include max-custom(480px) {
+        @include size(100% null);
+      }
+    }
+
+    .text-container {
+      @include max-size(60% null);
+      padding: 20px 0 0;
+      display: inline-block;
+
+      @include max-custom(480px) {
+        @include max-size(100% null);
+        padding: 30px;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+
+      a {
+        color: $orange;
+        display: block;
+        transition: 0.3s;
+
+        &:hover {
+          text-decoration: none;
+          color: $dark;
+        }
+      }
+    }
+  }
+}
