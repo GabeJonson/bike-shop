@@ -6,11 +6,11 @@ footer.container
             p.text-uppercase #[strong Follow us on facebook]
         .col-xs-12.col-sm-4
             ul
-                +list-link('#', 'home')(class='text-uppercase active')
-                +list-link('#', 'about')(class='text-uppercase')
-                +list-link('#', 'shop')(class='text-uppercase')
-                +list-link('#', 'blog')(class='text-uppercase')
-                +list-link('#', 'contacts')(class='text-uppercase')
+                +list-link('/', 'home')(class='text-uppercase active')
+                +list-link('/about.html', 'about')(class='text-uppercase')
+                +list-link('/shop.html', 'shop')(class='text-uppercase')
+                +list-link('/blog.html', 'blog')(class='text-uppercase')
+                +list-link('/contcts.html', 'contacts')(class='text-uppercase')
         .col-xs-12.col-sm-4
             .call-us.clearfix
                 i.fa.fa-phone
@@ -24,7 +24,7 @@ footer.container
                     p.text-uppercase GLASGOW, DC 45 FR 45.
 
         .copyright.col-xs-12.col-sm-10.non-padding
-            p.col-xs-12.col-sm-12 #[a.text-uppercase(href="#") #[strong bike store]] is proudly powered by WordPress #[a.text-uppercase(href="#") Entries (RSS)] and #[a.text-uppercase(href="#") Comments (RSS)] #[a.text-uppercase(href="#") Privacy Policy]
+            p.col-xs-12.col-sm-12 #[a.text-uppercase(href="/") #[strong bike store]] is proudly powered by WordPress #[a.text-uppercase(href="#") Entries (RSS)] and #[a.text-uppercase(href="#") Comments (RSS)] #[a.text-uppercase(href="#") Privacy Policy]
         .social.col-xs-12.col-sm-2.text-right
             a(href='#')
                 i.fa.fa-twitter

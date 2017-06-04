@@ -30,7 +30,7 @@ mixin items(image, heading, text)
 
 mixin products(image, amount, oldAmount, name, desc, sale)
 	li.product-item.relative.col-xs-12.col-sm-6.col-md-4
-		a.product(href='#')
+		a.product(href='/single-product.html')
 			if sale
 				.sale
 					+img('onsale_img.png')
@@ -63,7 +63,7 @@ mixin products(image, amount, oldAmount, name, desc, sale)
 
 mixin productsShop(image, amount, name, desc)
 	li.product-item.relative.col-xs-12.col-sm-6.col-md-4
-		a.product(href='/html/single-product.html')
+		a.product(href='/single-product.html')
 			.thumb-wrap.relative
 				+img(image)(class='responsive-image')
 				span.quick-view.text-uppercase Quick view
@@ -86,7 +86,7 @@ mixin latestPosts(position, image, heading, desc)
 	if position == 'left'
 		.post-container.clearfix
 			.image-container.col-xs-12.col-md-6.relative.non-padding
-				a(href='/html/single.html')
+				a(href='/single.html')
 					+img(image)(class="responsive-image")
 					.date.text-center
 						.date-item.text-uppercase
@@ -103,7 +103,7 @@ mixin latestPosts(position, image, heading, desc)
 			.description-container.col-xs-12.col-md-6
 				.h3.text-uppercase= heading
 				p= desc
-				a(href='/html/single.html')
+				a(href='/single.html')
 					i.fa.fa-comments-o
 					span 3 Comments
 			.image-container.col-xs-12.col-md-6.relative.non-padding
@@ -116,7 +116,7 @@ mixin latestPosts(position, image, heading, desc)
 
 mixin stuff(items)
 	each item in items
-		a(href='/html/single-product.html')
+		a(href='/single-product.html')
 			+img(item.img)
 			.text-container
 				.h5= item.name
@@ -124,7 +124,7 @@ mixin stuff(items)
 
 mixin posts(heading, image, text, btn)
 	.col-xs-12.col-sm-12
-		a(href='/html/single.html')
+		a(href='/single.html')
 			strong.h2.text-uppercase= heading
 			.blog-post
 				+img(image)(class='responsive-image')
